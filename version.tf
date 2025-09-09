@@ -5,7 +5,7 @@ terraform {
     # Range version - Dependabot may NOT propose updates if new version is still within range
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = ">= 4.11.0, <= 4.19.0"
+      version = ">= 4.11.0, <= 4.43.0"
     }
 
     # Pinned version - Dependabot WILL create PR to bump it if newer version exists
