@@ -17,7 +17,7 @@ terraform {
     # Range - upper bound lower than latest
     range_provider = {
       source  = "hashicorp/azurerm"
-      version = ">= 4.11.0, <= 4.19.0"
+      version = ">= 4.11.0, <= 4.43.0"
     }
 
     # Pessimistic - old minor version
