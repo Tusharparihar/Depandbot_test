@@ -23,7 +23,7 @@ terraform {
     # 4️⃣ Pessimistic version (~>) - Dependabot will bump if latest outside range
     pessimistic_provider = {
       source  = "aztfmod/azurecaf"
-      version = "~> 1.1.0"
+      version = "~> 1.2.31"
     }
   }
 }
