@@ -11,7 +11,7 @@ terraform {
     # Pinned version - Dependabot WILL create PR to bump it if newer version exists
     azurecaf = {
       source  = "aztfmod/azurecaf"
-      version = "1.2.21"
+      version = "1.2.31"
     }
 
     # Another range version - test Dependabot behavior
