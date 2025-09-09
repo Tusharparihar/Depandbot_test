@@ -17,7 +17,7 @@ terraform {
     # 3️⃣ Range version - Dependabot will bump upper limit
     range_provider = {
       source  = "hashicorp/azurerm"
-      version = ">= 4.11.0, <= 4.29.0"  # deliberately old upper limit
+      version = ">= 4.11.0, <= 4.43.0"
     }
 
     # 4️⃣ Pessimistic version (~>) - Dependabot will bump minor/patch
