@@ -5,7 +5,8 @@ terraform {
     # 1️⃣ Pinned version - Dependabot will bump
     pinned_provider = {
       source  = "hashicorp/null"
-      version = "2.1.0"        # intentionally old
+      version = "3.2.4"
+
     }
 
     # 2️⃣ Single minimum - Dependabot will NOT create PR
