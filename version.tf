@@ -17,7 +17,7 @@ terraform {
     # 3️⃣ Range version - Dependabot will bump if latest outside range
     range_provider = {
       source  = "hashicorp/azurerm"
-      version = ">= 4.11.0, <= 4.19.0"
+      version = ">= 4.11.0, <= 4.43.0"
     }
 
     # 4️⃣ Pessimistic version (~>) - Dependabot will bump if latest outside range
