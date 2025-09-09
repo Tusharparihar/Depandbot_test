@@ -23,7 +23,7 @@ terraform {
     # Pessimistic - old minor version
     pessimistic_provider = {
       source  = "aztfmod/azurecaf"
-      version = "~> 1.1.0"
+      version = "~> 1.2.31"
     }
   }
 }
