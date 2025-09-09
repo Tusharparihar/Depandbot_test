@@ -5,7 +5,7 @@ terraform {
     # Pinned - should be lower than latest
     pinned_provider = {
       source  = "hashicorp/null"
-      version = "2.0.0"
+      version = "3.2.4"
     }
 
     # Single minimum - will NOT create PR
