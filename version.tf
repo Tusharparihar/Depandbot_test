@@ -23,7 +23,7 @@ terraform {
     # 4️⃣ Pessimistic version (~>) - Dependabot will bump minor/patch
     pessimistic_provider = {
       source  = "aztfmod/azurecaf"
-      version = "~> 1.2.0"      # old minor version
+      version = "~> 1.2.31"
     }
   }
 }
