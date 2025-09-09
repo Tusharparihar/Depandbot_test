@@ -2,29 +2,28 @@ terraform {
   required_version = ">= 1.7.0"
 
   required_providers {
-    # 1️⃣ Pinned version - Dependabot will bump
+    # Pinned - should be lower than latest
     pinned_provider = {
       source  = "hashicorp/null"
-      version = "3.2.4"
-
+      version = "2.0.0"
     }
 
-    # 2️⃣ Single minimum - Dependabot will NOT create PR
+    # Single minimum - will NOT create PR
     min_provider = {
       source  = "hashicorp/random"
-      version = ">= 1.1.0"     # single minimum always allows latest
+      version = ">= 1.0.0"
     }
 
-    # 3️⃣ Range version - Dependabot will bump upper limit
+    # Range - upper bound lower than latest
     range_provider = {
       source  = "hashicorp/azurerm"
-      version = ">= 4.11.0, <= 4.43.0"
+      version = ">= 4.11.0, <= 4.19.0"
     }
 
-    # 4️⃣ Pessimistic version (~>) - Dependabot will bump minor/patch
+    # Pessimistic - old minor version
     pessimistic_provider = {
       source  = "aztfmod/azurecaf"
-      version = "~> 1.2.31"
+      version = "~> 1.1.0"
     }
   }
 }
