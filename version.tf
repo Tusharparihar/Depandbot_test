@@ -5,7 +5,7 @@ terraform {
     # Pinned - older than latest (Dependabot will bump to latest)
     pinned_provider = {
       source  = "hashicorp/null"
-      version = "3.1.0"
+      version = "3.2.4"
     }
 
     # Single minimum - open ended (won’t create PRs)
