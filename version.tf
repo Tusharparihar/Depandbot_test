@@ -17,7 +17,7 @@ terraform {
     # 3️⃣ Range - patch/minor PR
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = ">= 3.80.0, <= 3.90.0" # latest 4.43.0 → patch PR
+      version = ">= 3.80.0, <= 4.43.0" # latest 4.43.0 → patch PR
     }
 
     # 4️⃣ Pessimistic - will create BOTH minor + major PRs
