@@ -9,7 +9,7 @@ terraform {
 
     random = {
       source  = "hashicorp/random"
-      version = "3.7.2"  # latest minor: 3.2.0 → minor/patch PR
+      version = "2.0.0"  # latest minor: 3.2.0 → minor/patch PR
     }
 
     azurerm = {
