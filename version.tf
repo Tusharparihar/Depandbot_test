@@ -5,7 +5,7 @@ terraform {
     # 1️⃣ Pinned - will bump to latest patch/minor
     null = {
       source  = "hashicorp/null"
-      version = "3.0.0" # latest is 3.2.4
+      version = "3.2.4" # latest is 3.2.4
     }
 
     # 2️⃣ Minimum only - Dependabot will raise a PR to bump to latest
