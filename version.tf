@@ -2,28 +2,28 @@ terraform {
   required_version = ">= 1.6.0"
 
   required_providers {
-    # 1️⃣ Pinned - patch/minor PR
+    # 1️⃣ Pinned - minor/patch bump
     null = {
       source  = "hashicorp/null"
-      version = "3.2.4" # latest 3.2.4 → patch PR
+      version = "3.0.0"   # latest is 3.2.4
     }
 
-    # 2️⃣ Minimum only - major PR later
+    # 2️⃣ Minimum only - will bump to latest minor/major
     random = {
       source  = "hashicorp/random"
-      version = ">= 2.0.0" # latest 3.x → major PR
+      version = ">= 2.0.0" # latest is 3.5.x
     }
 
-    # 3️⃣ Range - patch/minor PR
+    # 3️⃣ Range - will bump minor/patch and test major
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = ">= 3.80.0, <= 4.43.0" # latest 4.43.0 → patch PR
+      version = ">= 3.80.0, <= 3.90.0" # latest is 4.43.0
     }
 
-    # 4️⃣ Pessimistic - will create BOTH minor + major PRs
+    # 4️⃣ Pessimistic - will block major but can test
     azurecaf = {
       source  = "aztfmod/azurecaf"
-      version = "~> 1.2.31" # latest 1.2.31 (minor PR), 2.x (major PR)
+      version = "~> 1.1.0" # latest is 2.x
     }
   }
 }
