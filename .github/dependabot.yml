@@ -11,8 +11,8 @@ updates:
         update-types:
           - "minor"
           - "patch"
-      # major-providers:
-      #   patterns:
-      #     - "*"
-      #   update-types:
-      #     - "major"
+      major-providers:
+        patterns:
+          - "*"
+        update-types:
+          - "major"
