@@ -5,7 +5,7 @@ terraform {
     # 1️⃣ Minor/Patch bump (pinned)
     null = {
       source  = "hashicorp/null"
-      version = "3.0.0"        # latest patch: 3.2.4
+      version = "3.2.4"        # latest patch: 3.2.4
     }
 
     # 2️⃣ Minor/Patch bump (minimum only)
