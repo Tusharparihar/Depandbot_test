@@ -1,7 +1,9 @@
-# .github/dependabot.yml
 version: 2
 updates:
   - package-ecosystem: "terraform"
     directory: "/"
     schedule:
       interval: "daily"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
