@@ -5,7 +5,7 @@ terraform {
     # 1️⃣ Pinned - minor/patch bump
     null = {
       source  = "hashicorp/null"
-      version = "3.0.0"        # latest patch: 3.2.4 → minor/patch PR
+      version = "3.2.4"        # latest patch: 3.2.4 → minor/patch PR
     }
 
     # 2️⃣ Minimum only - minor/patch bump
@@ -35,7 +35,7 @@ terraform {
     # 6️⃣ Pinned major behind - major PR
     kubernetes = {
       source  = "hashicorp/kubernetes"
-      version = "2.0.0"        # latest 3.x → major PR
+      version = "2.38.0"        # latest 3.x → major PR
     }
 
     # 7️⃣ Pessimistic minor behind - minor PR
