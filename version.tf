@@ -23,7 +23,7 @@ terraform {
     # 4️⃣ Pessimistic - will bump inside 1.x, but block 2.x (tests major PR)
     azurecaf = {
       source  = "aztfmod/azurecaf"
-      version = "~> 1.1.0" # latest is 2.x
+      version = "~> 1.2.31" # latest is 2.x
     }
   }
 }
