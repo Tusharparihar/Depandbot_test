@@ -17,7 +17,7 @@ terraform {
     # Range - ends lower than latest (Dependabot will try inside range, block outside)
     range_provider = {
       source  = "hashicorp/azurerm"
-      version = ">= 3.80.0, <= 3.90.0"
+      version = ">= 3.80.0, <= 4.43.0"
     }
 
     # Pessimistic - older than latest, minor/patch only
