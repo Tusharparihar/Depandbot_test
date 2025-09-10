@@ -5,13 +5,13 @@ terraform {
     # 1️⃣ Minor/Patch bump (pinned)
     null = {
       source  = "hashicorp/null"
-      version = "3.2.4"        # latest patch: 3.2.4
+      version = "3.2.1"        # latest patch: 3.2.4
     }
 
     # 2️⃣ Minor/Patch bump (minimum only)
     random = {
       source  = "hashicorp/random"
-      version = "3.7.2"     # latest minor: 3.2.0
+      version = "3.7.1"     # latest minor: 3.2.0
     }
 
     # 3️⃣ Minor/Patch bump + Major allowed
