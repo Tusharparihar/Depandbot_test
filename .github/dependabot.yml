@@ -4,10 +4,10 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    ignore:
+    # ignore:
       # Ignore major versions initially
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
-      # When you want major updates, comment out the above ignore
+      # - dependency-name: "*"
+      #   update-types: ["version-update:semver-major"]
+      # # When you want major updates, comment out the above ignore
     labels:
       - "dependencies"
