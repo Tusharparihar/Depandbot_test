@@ -9,7 +9,7 @@ terraform {
 
     random = {
       source  = "hashicorp/random"
-      version = "2.0.0"  # latest minor: 3.2.0 → minor/patch PR
+      version = "3.7.2"  # latest minor: 3.2.0 → minor/patch PR
     }
 
     azurerm = {
@@ -19,7 +19,7 @@ terraform {
 
     google = {
       source  = "hashicorp/google"
-      version = "3.0.0"  # latest 5.x → major PR if allowed
+      version = "7.2.0"  # latest 5.x → major PR if allowed
     }
 
     kubernetes = {
