@@ -17,7 +17,7 @@ terraform {
     # 3️⃣ Range - will bump minor/patch and test major
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = ">= 3.80.0, <= 3.90.0" # latest is 4.43.0
+      version = ">= 3.80.0, <= 4.43.0" # latest is 4.43.0
     }
 
     # 4️⃣ Pessimistic - will block major but can test
