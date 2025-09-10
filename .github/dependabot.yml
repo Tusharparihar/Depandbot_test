@@ -1,23 +1,29 @@
 version: 2
 updates:
+  # Job 1: Safe Updates (Minor/Patch) - Weekly PRs
   - package-ecosystem: "terraform"
     directory: "/"
     schedule:
-      interval: "daily"
-    groups:
-      provider-minor-patch:
-        patterns:
-          - "azurerm"
-          - "azurecaf"
-          - "random"
-        update-types:
-          - "minor"
-          - "patch"
+      interval: "weekly"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+    labels:
+      - "dependencies"
+      - "safe-update"
+    reviewers:
+      - "your-team"
 
-      provider-major-upgrade:
-        patterns:
-          - "azurerm"
-          - "azurecaf"
-          - "random"
-        update-types:
-          - "major"
+  # Job 2: Major Updates - Monthly PRs for Awareness
+  - package-ecosystem: "terraform"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    allow:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+    labels:
+      - "major-update"
+      - "needs-planning"
+    reviewers:
+      - "your-team"
