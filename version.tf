@@ -4,7 +4,7 @@ terraform {
   required_providers {
     null = {
       source  = "hashicorp/null"
-      version = "3.1.2"  # latest patch: 3.2.4 → minor/patch PR
+      version = "3.2.4"  # latest patch: 3.2.4 → minor/patch PR
     }
 
     random = {
@@ -24,7 +24,7 @@ terraform {
 
     kubernetes = {
       source  = "hashicorp/kubernetes"
-      version = "2.0.0"  # latest 3.x → major PR
+      version = "2.38.0"  # latest 3.x → major PR
     }
 
     azurecaf = {
