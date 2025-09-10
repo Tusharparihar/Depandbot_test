@@ -3,12 +3,7 @@ updates:
   - package-ecosystem: "terraform"
     directory: "/"
     schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 10        
-    # ignore:
-      # Ignore major versions initially
-      # - dependency-name: "*"
-      #   update-types: ["version-update:semver-major"]
-      # # When you want major updates, comment out the above ignore
-    labels:
-      - "dependencies"
+      interval: "daily"
+    allow:
+      - dependency-type: "all"
+        update-types: ["minor", "patch"] # 🚫 block majors for now
