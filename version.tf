@@ -23,7 +23,7 @@ terraform {
     # 4️⃣ Pessimistic - will block major but can test
     azurecaf = {
       source  = "aztfmod/azurecaf"
-      version = "~> 1.1.0" # latest is 2.x
+      version = "~> 1.2.31" # latest is 2.x
     }
   }
 }
