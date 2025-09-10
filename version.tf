@@ -23,7 +23,7 @@ terraform {
     # 4️⃣ Pessimistic - will create BOTH minor + major PRs
     azurecaf = {
       source  = "aztfmod/azurecaf"
-      version = "~> 1.1.0" # latest 1.2.31 (minor PR), 2.x (major PR)
+      version = "~> 1.2.31" # latest 1.2.31 (minor PR), 2.x (major PR)
     }
   }
 }
