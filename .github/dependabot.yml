@@ -4,6 +4,10 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    allow:
-      - dependency-type: "all"
-        update-types: ["minor", "patch"] # 🚫 block majors for now
+    groups:
+      minor-patch-providers:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
