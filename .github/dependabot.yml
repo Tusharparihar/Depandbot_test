@@ -1,3 +1,9 @@
+version: 2
+updates:
+  - package-ecosystem: "terraform"
+    directory: "/"
+    schedule:
+      interval: "daily"
 groups:
   provider-group:
     patterns:
