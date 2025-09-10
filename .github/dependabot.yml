@@ -1,18 +1,16 @@
-version: 2
-updates:
-  - package-ecosystem: "terraform"
-    directory: "/"
-    schedule:
-      interval: "daily"
-    groups:
-      provider-group:
-        patterns:
-          - "azurerm"
-        update-types:
-          - "minor"
-          - "patch"
-      provider-major-upgrade:
-        patterns:
-          - "azurerm"
-        update-types:
-          - "major"
+groups:
+  provider-group:
+    patterns:
+      - "azurerm"
+      - "azurecaf"
+      - "random"
+    update-types:
+      - "minor"
+      - "patch"
+  provider-major-upgrade:
+    patterns:
+      - "azurerm"
+      - "azurecaf"
+      - "random"
+    update-types:
+      - "major"
