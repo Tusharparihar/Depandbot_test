@@ -5,7 +5,7 @@ terraform {
     # 1️⃣ Pinned - patch/minor PR
     null = {
       source  = "hashicorp/null"
-      version = "3.0.0" # latest 3.2.4 → patch PR
+      version = "3.2.4" # latest 3.2.4 → patch PR
     }
 
     # 2️⃣ Minimum only - major PR later
