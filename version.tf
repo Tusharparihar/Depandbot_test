@@ -5,7 +5,7 @@ terraform {
     # Pinned - older than latest (Dependabot will bump to latest)
     pinned_provider = {
       source  = "hashicorp/null"
-      version = "3.2.4"
+      version = "3.1.0"
     }
 
     # Single minimum - open ended (won’t create PRs)
@@ -17,7 +17,7 @@ terraform {
     # Range - ends lower than latest (Dependabot will try inside range, block outside)
     range_provider = {
       source  = "hashicorp/azurerm"
-      version = ">= 3.80.0, <= 4.43.0"
+      version = ">= 3.80.0, <= 3.90.0"
     }
 
     # Pessimistic - older than latest, minor/patch only
