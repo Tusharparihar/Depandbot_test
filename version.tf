@@ -41,7 +41,7 @@ terraform {
     # 7️⃣ Pessimistic minor behind - minor PR
     helm = {
       source  = "hashicorp/helm"
-      version = "~> 2.3.0"     # latest 2.5.x → minor/patch PR
+      version = "~> 3.0.2"     # latest 2.5.x → minor/patch PR
     }
 
     # 8️⃣ Range with upper bound below latest major - blocked major
