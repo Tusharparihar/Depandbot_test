@@ -4,6 +4,7 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    open-pull-requests-limit: 10        
     # ignore:
       # Ignore major versions initially
       # - dependency-name: "*"
