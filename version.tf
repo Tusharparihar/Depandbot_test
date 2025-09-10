@@ -23,7 +23,7 @@ terraform {
     # 4️⃣ Pessimistic - minor/patch bump only
     azurecaf = {
       source  = "aztfmod/azurecaf"
-      version = "~> 1.1.0"     # latest 1.2.x → minor PR
+      version = "~> 1.2.31"     # latest 1.2.x → minor PR
     }
 
     # 5️⃣ Open-ended minimum - major possible
