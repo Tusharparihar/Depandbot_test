@@ -12,7 +12,7 @@ updates:
       - "dependencies"
       - "safe-update"
     reviewers:
-      - "your-team"
+      - "Tusharparihar"
 
   # Job 2: Major Updates - Monthly PRs for Awareness
   - package-ecosystem: "terraform"
@@ -26,4 +26,4 @@ updates:
       - "major-update"
       - "needs-planning"
     reviewers:
-      - "your-team"
+      - "Tusharparihar"
