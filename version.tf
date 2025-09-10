@@ -14,7 +14,7 @@ terraform {
 
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = ">= 3.80.0, <= 4.41.0"  # latest minor/patch: 4.43.0 → minor PR
+      version = ">= 3.80.0, <= 4.43.0"  # latest minor/patch: 4.43.0 → minor PR
     }
 
     google = {
