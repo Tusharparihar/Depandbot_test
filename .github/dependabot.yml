@@ -4,15 +4,3 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    groups:
-      minor-patch-providers:
-        patterns:
-          - "*"
-        update-types:
-          - "minor"
-          - "patch"
-      major-providers:
-        patterns:
-          - "*"
-        update-types:
-          - "major"
