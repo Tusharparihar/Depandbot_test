@@ -29,7 +29,7 @@ terraform {
 
     azurecaf = {
       source  = "aztfmod/azurecaf"
-      version = "~> 1.1.15"  # latest 1.2.x → minor PR
+      version = "~> 1.2.31"  # latest 1.2.x → minor PR
     }
 
     helm = {
