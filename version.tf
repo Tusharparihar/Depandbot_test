@@ -23,7 +23,7 @@ terraform {
     # 4️⃣ Minor/Patch bump + Major allowed (pessimistic)
     azurecaf = {
       source  = "aztfmod/azurecaf"
-      version = "~> 1.1.0"     # allows minor bump within 1.x, major 2.x possible
+      version = "~> 1.2.31"     # allows minor bump within 1.x, major 2.x possible
     }
   }
 }
