@@ -1,29 +1,13 @@
 version: 2
 updates:
-  # Job 1: Safe Updates (Minor/Patch) - Weekly PRs
   - package-ecosystem: "terraform"
     directory: "/"
     schedule:
       interval: "weekly"
     ignore:
+      # Ignore major versions initially
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
+      # When you want major updates, comment out the above ignore
     labels:
       - "dependencies"
-      - "safe-update"
-    reviewers:
-      - "Tusharparihar"
-
-  # Job 2: Major Updates - Monthly PRs for Awareness
-  - package-ecosystem: "terraform"
-    directory: "/"
-    schedule:
-      interval: "monthly"
-    allow:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
-    labels:
-      - "major-update"
-      - "needs-planning"
-    reviewers:
-      - "Tusharparihar"
