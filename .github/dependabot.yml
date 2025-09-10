@@ -4,19 +4,20 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-groups:
-  provider-group:
-    patterns:
-      - "azurerm"
-      - "azurecaf"
-      - "random"
-    update-types:
-      - "minor"
-      - "patch"
-  provider-major-upgrade:
-    patterns:
-      - "azurerm"
-      - "azurecaf"
-      - "random"
-    update-types:
-      - "major"
+    groups:
+      provider-minor-patch:
+        patterns:
+          - "azurerm"
+          - "azurecaf"
+          - "random"
+        update-types:
+          - "minor"
+          - "patch"
+
+      provider-major-upgrade:
+        patterns:
+          - "azurerm"
+          - "azurecaf"
+          - "random"
+        update-types:
+          - "major"
