@@ -1,14 +1,6 @@
-# .github/dependabot.yml
 version: 2
 updates:
   - package-ecosystem: "terraform"
-    directory: "/"
+    directory: "/"       # location of your Terraform files
     schedule:
       interval: "daily"
-    groups:
-      all-providers:
-        patterns:
-          - "*"
-        update-types:
-          - "minor"
-          - "patch"
