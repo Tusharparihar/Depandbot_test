@@ -2,7 +2,7 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~> 3.80.0"  # Pessimistic patch constraint
+      version = "~> 4.46.0"  # Pessimistic patch constraint
     }
   }
 }
